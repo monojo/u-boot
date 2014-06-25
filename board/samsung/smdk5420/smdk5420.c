@@ -206,6 +206,14 @@ void dram_init_banksize(void)
 		gd->bd->bi_dram[7].start = PHYS_SDRAM_8;
 		gd->bd->bi_dram[7].size = get_ram_size((long *)PHYS_SDRAM_8,
 							PHYS_SDRAM_8_END_SIZE);
+		gd->bd->bi_dram[8].start = 0;
+		gd->bd->bi_dram[8].size = 0;
+		gd->bd->bi_dram[9].start = 0;
+		gd->bd->bi_dram[9].size = 0;
+		gd->bd->bi_dram[10].start = 0;
+		gd->bd->bi_dram[10].size = 0;
+		gd->bd->bi_dram[11].start = 0;
+		gd->bd->bi_dram[11].size = 0;
 	} else if (nr_dram_banks == 12) {
 		gd->bd->bi_dram[7].start = PHYS_SDRAM_8;
 		gd->bd->bi_dram[7].size = get_ram_size((long *)PHYS_SDRAM_8,
